@@ -6,21 +6,27 @@
 html, body{
     font-family: Arial, Helvetica, sans-serif;
 } 
+/******************** Header ***************/
+.header, .footer, .footer-mid{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-left-text, .footer-left{
+    display: flex;
+    flex-direction: column;
+}
 
 .header{
     max-width: 100%;
-    max-height: 20%;
+    /* max-height: 20%; */
     background-color: #21232f;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: .5% .25%;
      
 }
 .header-left-text{
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     margin-left: 15%;
 }
@@ -32,9 +38,37 @@ html, body{
     flex-grow: 7;
     text-align: center;
 }
-
-
-.far, .fas, .header-left-text h6, .header-left-text h4, .header-main h3{
+.fab, .far, .fas, .header-left-text h6, .header-left-text h4, .header-main h3{
     color: #e9e9e6;
 }
 
+/******************** Footer ***************/
+.footer{
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #232323;
+    padding: 4%;
+}
+.footer-left{
+    flex-grow: 1;
+}
+.footer-mid{
+    flex-grow: 2;
+}
+.footer-mid-right{
+    flex-grow: 1;
+}
+.footer-left-content4 p, .footer-mid-bottom p, .footer-right-bottom-content p{
+    font-size: smaller;
+}
+
+.footer-left-content1 h4, .footer-mid-top h5{
+    color: #fcfcfc;
+}
+.footer-mid-bottom p, .footer-left-content2 p, .footer-left-content3 h5, .footer-left-content4 p, .footer-right-bottom-content p{
+    color: #848484;
+}
+.footer-left-content2 p{
+    font-size: 10px;
+}
