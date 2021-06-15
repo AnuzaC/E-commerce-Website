@@ -6,6 +6,12 @@
 html, body{
     font-family: Arial, Helvetica, sans-serif;
 } 
+
+img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
 /******************** Header ***************/
 .flex, .header, .footer, .footer-mid{
     display: flex;
@@ -55,21 +61,296 @@ html, body{
     color: white;
 }
 .main-card{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 80%;
+    height: 1300px;
+    position: absolute;
+    right: 10%;
+    top: 25%;
     background-color: white;
     box-sizing: border-box;
     box-shadow: 20px 20px 50px 15px grey;
 }
 
+
+
+/*************************** Container 1 ***********************/
+.flex-container-top{
+    width: 100%;
+    height: 20%;
+}
+.flex-container-top-left{
+    flex: 3;
+    height: 100%;
+    background-color: #338ad7;
+    position: relative;
+}
+.flex-container-top-right{
+    flex: 1.8;
+    height: 100%;
+    background-color: #5a49dd;
+    position: relative;
+}
+.top-left-content, .top-right-content{
+    position: absolute;
+    top: 13%;
+    left: 6%;
+}
+.flex-container-top img{
+    opacity: 0.5;
+}
+.top-content1{
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+    width: min-content;
+    font-size: small;
+    margin-bottom: 10%;
+}
+.top-content2{
+    font-size: small;
+    color: white;
+    margin-bottom: 5%;
+}
+.top-content3{
+    color: white;
+    font-size: large;
+    margin-bottom: 8%;
+}
+.top-content4{
+    box-sizing: border-box;
+    font-size: small;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 5px rgb(77, 169, 197);
+    width: max-content;
+    padding: 2%;
+}
+.top-content4 p{
+    font-weight: bold;
+}
+
+/*************************** Container Bottom ***********************/
+.flex-container-bottom{
+    max-width: 100%;
+    height: 80%;
+}
+.bottom-left{
+    flex: 1;
+    height: 100%;
+    border-right: .5px solid rgba(128, 128, 128, 0.349);
+}
+.bottom-right{
+    flex: 3;
+    height: 100%;
+}
+/*************************** Filter ***********************/
+.filter-container{
+    height: 5%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .5px solid rgba(128, 128, 128, 0.349);
+}
+.filter-container h4{
+    padding-left: 6%;
+    font-weight: bolder;
+}
+.fa-sync-alt{
+    color: rgb(18, 18, 110);   
+}
+.refresh-icon{
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 20%;
+    border-left: .5px solid rgba(128, 128, 128, 0.349);
+}
+
+/*************************** Categories ***********************/
+.categories-container, .price-container, .brand-container, .color-container, .size-container{
+    padding: 4%;
+    border-bottom: .5px solid rgba(128, 128, 128, 0.349);
+}
+.flex-container-categories-top, .categories-content, .flex-container-price-top, .flex-container-brand-top, .flex-container-color-top, .flex-container-size-top{
+    justify-content: space-between;
+}
+.flex-container-categories-bottom{
+    padding: 6%;
+}
+.categories-content1{
+    justify-content: space-between;
+    color: rgb(159, 16, 224);
+}
+.fa-angle-down{
+    color: black;
+}
+.fa-times{
+    color: grey;
+}
+
+/*************************** Price ***********************/
+.flex-container-price-content{
+    padding: 6%;
+    justify-content: space-between;
+}
+.price-input{
+    justify-content: space-between;
+}
+input[type="number"]{
+    padding: 1% 5%;
+    width: 30%;
+    border-radius: 30px;
+    margin: 8% 1%;
+}
+.slider{
+    width: 100%;
+}
+/*************************** Brand ***********************/
+.flex-container-brand-content{
+    padding: 6%;
+}
+.brand-content{
+    justify-content: space-between;
+}
+
+/*************************** Color ***********************/
+
+.color-container-content{
+    padding: 6%;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+.fa-circle{
+    font-size: xx-large;
+}
+.color-content1 i{
+    color: rgb(192, 184, 184);
+}
+.color-content2 i{
+    color: grey;
+}
+.color-content3 i{
+    color: yellow;
+}
+.color-content4 i{
+    color: orange;
+}
+.color-content5 i{
+    color: red;
+}
+.color-content6 i{
+    color: violet;
+}
+.color-content7 i{
+    color: blue;
+}
+.color-content8 i{
+    color: green;
+}
+.color-content9 i{
+    color: brown;
+}
+.color-content10 i{
+    color: black;
+}
+.color-content11 i{
+    color: skyblue;
+}
+.color-content12 i{
+    color: purple;
+}
+
+/*************************** Size ***********************/
+.flex-container-size-content{
+    padding: 6%;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 2%;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: .5px solid rgba(0, 0, 0, 0.8);
+    padding: 20%;
+    font-size: small;
+    text-align: center;
+}
+
+/*************************** Products ***********************/
+
+.flex-container1{
+    height: 5%;
+    border-bottom: .5px solid rgba(128, 128, 128, 0.349);
+}
+.container1-box1, .container1-box2, .container1-box3{
+    align-items: center;
+    justify-content: space-around;
+    border-right: .5px solid rgba(128, 128, 128, 0.349);
+    flex: 1;
+}
+.compare-content1, .compare-content2{
+    height: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border-right: .5px solid rgba(128, 128, 128, 0.349);
+}
+.compare-content3{
+    justify-content: center;
+    flex: 3;
+}
+.fa-caret-down{
+    color: black;
+}
+.fa-list{
+    color: grey;
+}
+
+/*************************** Shoes ***********************/
+.flex-container2, .flex-container3, .flex-container4, .flex-container5{
+    height: 25%;
+    border-bottom: .5px solid rgba(128, 128, 128, 0.349);
+}
+h6{
+    color: blue;
+}
+.box{
+    flex: 1;
+    border-right: .5px solid rgba(128, 128, 128, 0.349);
+}
+.flex-relative{
+    position: relative;
+}
+.flex-absolute{
+    position: absolute;
+    top: 83%;
+    left: 6%;
+}
+.container3-box2{
+    background-color: #415dda;
+}
+.container3-box2 img{
+    opacity: 0.2;
+}
+/*************************** Bottom-card ***********************/
+.flex-container6{
+    height: 5%;
+}
+.bottom-box{
+    justify-content: center;
+    align-items: center;
+}
 /*************************** Footer ***********************/
+.footer-wrap{
+    width: 100%;
+    margin-top: 91%;
+    /* padding-top: 65%; */
+}
 .footer-top{
     text-align: center;
     padding: 5% 20%;
     background-image: url("https://image.freepik.com/free-vector/clean-white-stripe-background_105940-870.jpg");
-
+    background-size: contain;
+    background-repeat: x-repeat;
 }
 input[type="email"]
 {
@@ -89,7 +370,6 @@ input[type="email"]
     color: blue;
 }
 .footer{
-    /* position: relative; */
     max-width: 100%;
     max-height: 9%;
     justify-content: space-between;
