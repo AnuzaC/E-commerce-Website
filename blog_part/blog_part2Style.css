@@ -1,0 +1,89 @@
+/***************** Container-6 **************/
+.flex-container6{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: .5%;
+    border-top:0.5px solid rgba(128, 128, 128, 0.349);
+}
+.fa-spinner{
+    color: blue;
+    font-size: 15px;
+    margin-right: 2%;
+}
+/***************** Container-7 **************/
+.flex-container7{
+    width: 100%;
+    height: 9%;
+}
+.container7-box1, .container7-box3{
+    flex: 1;
+    height: 100%;
+}
+.container7-box2{
+    height: 100%;
+    flex: 2;
+}
+.container7-box1{
+    background-color: #47b8f2;
+}
+.container7-box3{
+    background-color: #2840bc;
+}
+.container7-box1, .container7-box3, .container8-box2{
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.container7-box1-content, .container7-box3-content, .container8-box2-content{
+    align-items: center;
+}
+.flex-container7 i, .flex-container8 i{
+    font-size: xx-large;
+}
+.flex-container7 p, .flex-container8 p{
+    font-size: xx-small;
+}
+
+.container7-box2{
+    justify-content: space-around;
+    border-top: .5px solid rgba(128, 128, 128, 0.349);
+}
+.container7-box2-top{
+    justify-content: space-between;
+    padding: 0% 5%;
+}
+.container7-box2-content{
+    justify-content: space-between;
+    padding: 0% 5%;
+}
+
+/***************** Container-8 **************/
+.flex-container8{
+    width: 100%;
+    height: 10%;
+    align-items: center;
+}
+.container8-box1, .container8-box2, .container8-box3, .container8-box4{
+   flex: 1;
+   height: 100%;
+}
+.container8-box2{
+    background-color: #232323;
+}
+.flex-container8 img{
+    object-fit: cover;
+}
+/***************** Container-9 **************/
+.flex-container9{
+    width: 100%;
+    height: 8%;
+    align-items: center;
+}
+.container9-box1, .container9-box2, .container9-box3, .container9-box4, .container9-box5, .container9-box6{
+    flex: 1;
+    height: 100%;
+}
+.flex-container9 img{
+    object-fit: cover;
+}
