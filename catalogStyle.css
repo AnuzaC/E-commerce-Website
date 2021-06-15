@@ -1,0 +1,121 @@
+*{
+    width: 1920;
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+} 
+/******************** Header ***************/
+.flex, .header, .footer, .footer-mid{
+    display: flex;
+    flex-direction: row;
+    /* border: .25px solid rgb(146, 146, 146); */
+}
+
+.flex-col, .header-left-text, .footer-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    max-width: 100%;
+    max-height: 1%;
+    background-color: #3853d8;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5% .25%;
+     
+}
+.header-left-text{
+    align-items: flex-start;
+    margin-left: 15%;
+}
+.header-left, .header-right{
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.header-main{
+    flex-grow: 7;
+    text-align: center;
+}
+.fab, .far, .fas, .header-left-text h6, .header-left-text h4, .header-main h3{
+    color: #e9e9e6;
+}
+
+/********************************* Main ************************/
+.main-top{
+    background-color: #506ae9;
+    padding: 2% 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-top h2, .main-top p{
+    color: white;
+}
+.main-card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 50px 15px grey;
+}
+
+/*************************** Footer ***********************/
+.footer-top{
+    text-align: center;
+    padding: 5% 20%;
+    background-image: url("https://image.freepik.com/free-vector/clean-white-stripe-background_105940-870.jpg");
+
+}
+input[type="email"]
+{
+    padding: 1% 5%;
+    width: 60%;
+    border-radius: 3%;
+    margin-top: 20px;
+    border: none;
+}
+.input-box{
+    position: relative;
+}
+.input-box i{
+    position: absolute;
+    top: 53%;
+    right: 18%;
+    color: blue;
+}
+.footer{
+    /* position: relative; */
+    max-width: 100%;
+    max-height: 9%;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #232323;
+    padding: 4%;
+}
+.footer-left{
+    flex-grow: 1;
+}
+.footer-mid{
+    flex-grow: 2;
+}
+.footer-mid-right{
+    flex-grow: 1;
+}
+.footer-left-content4 p, .footer-mid-bottom p, .footer-right-bottom-content p{
+    font-size: smaller;
+}
+
+.footer-left-content1 h4, .footer-mid-top h5{
+    color: #fcfcfc;
+}
+.footer-mid-bottom p, .footer-left-content2 p, .footer-left-content3 h5, .footer-left-content4 p, .footer-right-bottom-content p{
+    color: #848484;
+}
+.footer-left-content2 p{
+    font-size: 10px;
+}
