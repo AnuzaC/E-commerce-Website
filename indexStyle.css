@@ -6,6 +6,14 @@
 html, body{
     font-family: Arial, Helvetica, sans-serif;
 } 
+img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+h6{
+    color: rgb(15, 15, 182);
+}
 /******************** Header ***************/
 .flex, .header, .footer, .footer-mid{
     display: flex;
@@ -44,68 +52,65 @@ html, body{
 }
 
 /******************** Main Section ***************/
-/* img{
-    object-fit: cover;
-} */
-
-/************** Main Section ************/
-/* main{
-    position: relative;
-} */
 .main-container-background{
-    align-items: center;
-    max-width: 100%;
-    max-height: 90%;
-    position: relative;
+    width: 100%;
 }
-.back-top{
-    color: rgb(9, 5, 48);
-    max-height: 40%;
+.back-top img{
+    width: 100%;
+    height: 40%;
+    object-fit: contain;
 }
-.back-mid{
-    
-    color: white;
-    max-height: 60%;
-}
-
-.back-foot{
-    max-height: 20%;
-    background-image: url(img/website-background-tile-lovely-subtle-light-tile-pattern-vol5-graphic-web-backgrounds-fbv-spm.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-/****************** Main container ***************/
-.main-section-container{
-    max-width: 80%;
-    background-color: white;
-}
-/********************* Slider ***********/
-
 
 /********************* Bottom Card ***********/
 .bottom-card{
-    width: 80%;
-    /* position: absolute;
+    max-width: 80%;
+    height: 3000px;
+    position: absolute;
     right: 10%;
-    top: 12%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    top: 12%;
     background-color: white;
     box-sizing: border-box;
     box-shadow: 20px 20px 50px 15px grey;
 }
+
+/********************* Slider ***********/
+.image-slider{
+    background-image: url('./img/photo-1518002171953-a080ee817e1f.jpg' );
+    height:20%;
+    width: 100%;
+    animation: slider 10s infinite;
+    /*animation: slider 10s infinite 4s;*/
+    /*margin-outside: 20%;*/
+    /*position: absolute;*/
+    align-content: center;
+    object-fit: cover;
+}
+@keyframes slider{
+    0%{
+        background-image: url('./img/photo-1539185441755-769473a23570.jpg');
+    }
+    50%{
+        background-image: url('./img/photo-1560769629-975ec94e6a86.jpg');
+    }
+    100%{
+        background-image: url('./img/shoe-2498994_960_720.jpg');
+    }
+}
+
 /****************** Container-1 ***********/
 .fa-dolly, .fa-hourglass-half, .fa-exchange-alt, .fa-id-card{
     color: #0d34e6;
     font-size: 20px;
     margin-bottom: 80%;
 }
+
 .flex-container1{
+    width: 100%;
+    height: 10%;  
     align-items: center;
-    /* flex: .15; */
 }
 .flex-container1-item{
+    width: 25%;
     align-items: center;
     padding: 3%;
 }
@@ -115,57 +120,296 @@ html, body{
 /***************** Container-2 **************/
 .flex-container2{
     width: 100%;
-    align-items: center;
+    height: 20%;
+}
+.container2-box1, .container2-box2{
+    width: 50%;
 }
 .container2-box1{
-    justify-content: center;
     align-items: center;
-    background-color: #f8f8f8;
-    
+    justify-content: space-evenly;
+    padding: 0% 5%;
+    height: 100%;
+    background-color: #c0cab2;
+}
+.container2-box2{
+    height: 100%;
 }
 .container2-box2 img{
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
+.container2-left-content1{
+    align-items: center;
+    justify-content: center;
+    margin: 1% 5%;
+}
+.container2-left-content1 h3{
+    text-decoration: line-through;
+    margin-left: 3%;
+}
+.container2-left-content1 h2{
+    color: rgb(59, 9, 138);
+    font-size: xx-large;
+}
+.container2-left-content2{
+    justify-content: space-between;
+    padding: 0% 8%;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 10px grey;
+}
+.container2-left-time{
+    align-self: center;
+    margin: 0% 2%;
+}
 /***************** Container-3 **************/
-.flex-container3-box1, .flex-container3-box2, .flex-container3-box3, .flex-container3-box4{
-    width: 25%;
+.flex-container3{
+    width: 100%;
+    height: 10%;
 }
-
-
-.flex-container3-box2, .flex-container3-box3, .flex-container3-box4, .flex-container4-box1, .flex-container4-box2{
+.flex-container3-box1, .flex-container3-box2, .flex-container3-box3, .flex-container3-box4{
+    flex: 1;
+    height: 100%;
+}
+.flex-container3-box2, .flex-container3-box3, .flex-container3-box4{
     position: relative;
 }
-.flex-container3-box2 img{
-    object-fit: contain;
-    
+.flex-container3-box1{
+    background-color: #232323;
+    justify-content: space-around;
+    align-items: center;
 }
-.container3-box2-price, .container3-box3-price, .container3-box4-price, .container4-box1-price, .container4-box2-price{
+
+.container3-box2-price, .container3-box3-price, .container3-box4-price{
     position: absolute;
     top: 80%;
-    right: 43%;
+    left: 14%;
 }
-.flex-container3-box4 p{
+.discount-box4{
     position: absolute;
     top: 10%;
-
+    right: 12%;
+    box-sizing: border-box;
+    background-color: black;
+    font-size: x-small;
+}
+.container3-box1-content-foot h5, .container3-box1-content h2, .discount-box4 p{
+    color: white;
+}
+.container3-box1-content p{
+    color: #b6b6ae;
+}
+.container3-box1-icon i{
+    font-size: xx-large;
+    color: rgba(90, 90, 151, 0.685);
+}
+/***************** Container-4 **************/
+.flex-container4{
+    width: 100%;
+    height: 10%;
+    align-items: center;
+}
+.flex-container4-box1, .flex-container4-box2{
+    flex: 1;
+    height: 100%;
+}
+.flex-container4-box1, .flex-container4-box2{
+    position: relative;
+}
+.container4-box1-price, .container4-box2-price{
+    position: absolute;
+    top: 80%;
+    left: 15%;
 }
 
-/***************** Container-4 **************/
+.flex-container4-box3{
+    position: relative;
+    height: 100%;
+    flex: 2;
+}
+.flex-container4-box3 img{
+    object-fit: cover;
+}
+.container4-box3-content{
+    align-items: flex-start;
+    position: absolute;
+    top: 13%;
+    left: 1.5%;
+}
+
+.container4-box3-content p{
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    width: min-content;
+    font-size: small;
+    margin-bottom: 10%;
+}
+.container4-box3-content h3{
+    font-size: xx-large;
+    color: white;
+    margin-top: 10%;
+}
+.container4-box3-content h4{
+    color: white;
+    margin-bottom: 50%;
+}
+.container4-box3-content h5{
+    color: white;
+    font-size: x-large;
+    background-color: rgb(81, 81, 141);
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 0% 8%;
+    box-shadow: 0px 0px 20px 10px rgba(150, 146, 146, 0.377);
+}
 /***************** Container-5 **************/
+.flex-container5{
+    width: 100%;
+    height: 10%;
+    align-items: center;
+}
+.flex-container5-box1{
+    position: relative;
+    border-top: .5px solid rgba(128, 128, 128, 0.349);
+    border-right: .5px solid rgba(128, 128, 128, 0.349);
+}
+.discount-box1{
+    position: absolute;
+    top: 10%;
+    right: 12%;
+    box-sizing: border-box;
+    background-color: black;
+    font-size: x-small;
+    color: white;
+}
+
 /***************** Container-6 **************/
+.flex-container6{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: .5%;
+    border-top:0.5px solid rgba(128, 128, 128, 0.349);
+}
+.fa-spinner{
+    color: blue;
+    font-size: 15px;
+    margin-right: 2%;
+}
 /***************** Container-7 **************/
+.flex-container7{
+    width: 100%;
+    height: 9%;
+}
+.container7-box1, .container7-box3{
+    flex: 1;
+    height: 100%;
+}
+.container7-box2{
+    height: 100%;
+    flex: 2;
+}
+.container7-box1{
+    background-color: #47b8f2;
+}
+.container7-box3{
+    background-color: #2840bc;
+}
+.container7-box1, .container7-box3, .container8-box2{
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.container7-box1-content, .container7-box3-content, .container8-box2-content{
+    align-items: center;
+}
+.flex-container7 i, .flex-container8 i{
+    font-size: xx-large;
+}
+.flex-container7 p, .flex-container8 p{
+    font-size: xx-small;
+}
+
+.container7-box2{
+    justify-content: space-around;
+    border-top: .5px solid rgba(128, 128, 128, 0.349);
+}
+.container7-box2-top{
+    justify-content: space-between;
+    padding: 0% 5%;
+}
+.container7-box2-content{
+    justify-content: space-between;
+    padding: 0% 5%;
+}
+
 /***************** Container-8 **************/
+.flex-container8{
+    width: 100%;
+    height: 10%;
+    align-items: center;
+}
+.container8-box1, .container8-box2, .container8-box3, .container8-box4{
+   flex: 1;
+   height: 100%;
+}
+.container8-box2{
+    background-color: #232323;
+}
+.flex-container8 img{
+    object-fit: cover;
+}
 /***************** Container-9 **************/
+.flex-container9{
+    width: 100%;
+    height: 8%;
+    align-items: center;
+}
+.container9-box1, .container9-box2, .container9-box3, .container9-box4, .container9-box5, .container9-box6{
+    flex: 1;
+    height: 100%;
+}
+.flex-container9 img{
+    object-fit: cover;
+}
 /***************** Container-10 **************/
+.flex-container10{
+    width: 100%;
+    height: 5%;
+}
+.container10-box, .container11-box{
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-bottom: .5px solid rgba(128, 128, 128, 0.349);
+    border-right: .5px solid rgba(128, 128, 128, 0.349);
+}
+.container10-box i, .container11-box i{
+    color: rgba(175, 175, 175, 0.589);
+    font-size: xx-large;
+}
 /***************** Container-11 **************/
+.flex-container11{
+    width: 100%;
+    height: 5%;
+}
 
 /******************** Footer ***************/
+.footer-wrap{
+    width: 100%;
+    margin-top: 100%;
+    padding-top: 65%;
+}
 .footer-top{
     text-align: center;
     padding: 5% 20%;
     background-image: url("https://image.freepik.com/free-vector/clean-white-stripe-background_105940-870.jpg");
-
+    background-size: contain;
+    background-repeat: x-repeat;
 }
 input[type="email"]
 {
@@ -185,7 +429,6 @@ input[type="email"]
     color: blue;
 }
 .footer{
-    /* position: relative; */
     max-width: 100%;
     max-height: 9%;
     justify-content: space-between;
