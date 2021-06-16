@@ -60,6 +60,10 @@ img{
 .main-top h2, .main-top p{
     color: white;
 }
+.main-bottom{
+    height: 1200px;
+    width: 100%;
+}
 .main-card{
     max-width: 80%;
     height: 1300px;
@@ -70,6 +74,11 @@ img{
     box-sizing: border-box;
     box-shadow: 20px 20px 50px 15px grey;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /***************** Card top **************/
 .card-top{
@@ -217,6 +226,8 @@ img{
 }
 .review-section img{
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
 }
 .review-content-right p{
@@ -329,15 +340,16 @@ a{
 /*************************** Footer ***********************/
 .footer-wrap{
     width: 100%;
-    margin-top: 91%;
-    /* padding-top: 65%; */
 }
 .footer-top{
     text-align: center;
-    padding: 5% 20%;
+    padding: 10% 20% 5% 20%;
     background-image: url("https://image.freepik.com/free-vector/clean-white-stripe-background_105940-870.jpg");
     background-size: contain;
     background-repeat: x-repeat;
+}
+.footer-top p{
+    font-size: small;
 }
 input[type="email"]
 {
