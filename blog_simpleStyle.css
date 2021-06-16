@@ -65,6 +65,10 @@ img{
     font-size: small;
     font-weight: lighter;
 }
+.main-bottom{
+    height: 2900px;
+    width: 100%;
+}
 .main-card{
     width: 90%;
     height: 3000px;
@@ -84,16 +88,20 @@ a{
 /*************************** Card ***********************/
 .card-container1{
     width: 100%;
-    height: 15%;
+    height: 14%;
 }
 .card-container2{
     width: 100%;
-    height: 50%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 41%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .card-container3{
     width: 100%;
-    height: 10%;
+    height: 15%;
+    font-size: small;
+    border-top: .5px solid rgba(194, 188, 188, 0.664);
+    border-bottom: .5px solid rgba(194, 188, 188, 0.664);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .card-container4{
     width: 100%;
@@ -106,12 +114,17 @@ a{
 }
 .card-top-abs-content1{
     position: absolute;
-    top: 0%;
-    left: 0%;
+    top: 45%;
+    left: 10%;
+}
+h1{
+    padding-top: 2%;
+    color: white;
 }
 .abs-content-category{
     background-color: blue;
     width: max-content;
+    box-shadow: 0px 0px 8px 5px rgba(90, 90, 109, 0.822);
 }
 .abs-content-category p, .card-top-abs-content2 p{
     color: white;
@@ -120,8 +133,8 @@ a{
 }
 .card-top-abs-content2{
     position: absolute;
-    top: 0%;
-    right: 0%;
+    top: 66%;
+    right: 13%;
 }
 
 /*************************** Container 2 ***********************/
@@ -137,31 +150,175 @@ a{
 }
 .card-content2{
     width: 60%;
-    padding: 1% 1%;
 }
 .card-content2 p{
     font-size: 14px;
-    word-spacing: 1%;
+    color: rgb(102, 101, 101);
 }
-/* .container2-image{
-    padding-top: 4%;
-} */
+.container2-box-content{
+    box-sizing: border-box;
+    border: .5px solid rgba(194, 188, 188, 0.664);
+}
+.container2-box-content p{
+    font-size: 15px;
+    padding: 3%;
+}
 /*************************** Container 3 ***********************/
+.author img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
 
+.author-name{
+    justify-self: center;
+}
+.container3-top{
+    padding: 1%;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.container3-top-button h6{
+    padding: 20%;
+    border-radius: 30px;
+    width: max-content;
+    border: .5px solid rgba(194, 188, 188, 0.664);
+}
+.container3-top-button h6{
+    color: rgb(99, 97, 97);
+}
+.container3-main{
+    border-top: .5px solid rgba(194, 188, 188, 0.664);
+    border-bottom: .5px solid rgba(194, 188, 188, 0.664);
+}
+.container3-main-left, .container3-main-mid, .container3-main-right{
+    position: relative;
+    border-right: .5px solid rgba(194, 188, 188, 0.664);
+    justify-content: space-between;
+    padding: 1%;
+}
+.container3-main-left img, .container3-main-right img{
+    height: 60%;
+    width: 100%;
+}
+.abs-container3-category, .abs-container3-mid-category{
+    color: white;
+    font-size: small;
+    background-color: blue;
+    box-shadow: 0px 0px 8px 5px rgba(57, 57, 71, 0.842);
+    width: max-content;
+    position: absolute;
+}
+.abs-container3-mid-category{
+    top: 6%;
+    left: 47%;
+}
+.abs-container3-category{
+    top: 57%;
+    left: 45%;
+}
+.container3-main-content{
+    color: grey;
+    font-size: small;
+}
+.container3-main-mid{
+    justify-content: space-between;
+    padding: 5%;
+}
 /*************************** Container 4 ***********************/
 
+.card-container4{
+    width: 100%;
+    background-color: #f8f8f8;
+}
+.review-left{
+    /* justify-content: center; */
+    margin: 4% 16% 1% 16%;
+}
+.review-head{
+    align-items: baseline;
+    justify-content: start;
+    border-bottom: .5px solid rgba(194, 188, 188, 0.664);
+}
+.review-head h3{
+    margin-left: 4%;
+}
+.review-content-left{
+    justify-content: space-around;
+}
+.review-content1, .review-content2, .review-content3, .review-content4{
+    padding: 3%;
+}
+.review-left img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.review-content-right p{
+    font-size: x-small;
+}
+.review-detail{
+    margin: 2%;
+}
+.reviewer-rating{
+    font-size: xx-small;
+}
+.yellow{
+    color: rgb(185, 158, 5);
+}
+.grey{
+    color: grey;
+}
+
+
+/********************** Comment Section **********************8*/
+.comment-box{
+    padding: 3%;
+    align-items: center;
+}
+.comment-section, form{
+    margin: 0% 16%;
+}
+
+textarea {
+    border: .5px solid rgba(128, 128, 128, 0.582);
+}
+input[type="button"]{
+    width: 20%;
+    color: white;
+    background-color: rgba(19, 19, 136, 0.808);
+}
+input[type="email"]{
+    
+    box-sizing: border-box;
+    border: 1px solid rgba(128, 128, 128, 0.582);
+}
+input[type="text"]{
+    box-sizing: border-box;
+    
+}
+.input{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 /*************************** Footer ***********************/
 .footer-wrap{
     width: 100%;
-    margin-top: 100%;
-    padding-top: 80%;
 }
 .footer-top{
     text-align: center;
-    padding: 5% 20%;
+    padding: 10% 20% 5% 20%;
     background-image: url("https://image.freepik.com/free-vector/clean-white-stripe-background_105940-870.jpg");
     background-size: contain;
     background-repeat: x-repeat;
+}
+.footer-top p{
+    font-size: small;
 }
 input[type="email"]
 {
