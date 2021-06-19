@@ -79,24 +79,21 @@ h6{
 /********************* Slider ***********/
 .image-slider{
     background-image: url('./img/photo-1518002171953-a080ee817e1f.jpg' );
-    height:20%;
+    height:25%;
     width: 100%;
     animation: slider 10s infinite;
-    /*animation: slider 10s infinite 4s;*/
-    /*margin-outside: 20%;*/
-    /*position: absolute;*/
-    align-content: center;
+    /* align-content: center; */
     object-fit: cover;
 }
 @keyframes slider{
     0%{
-        background-image: url('./img/photo-1539185441755-769473a23570.jpg');
+        background-image: url('./img/photo-1518002171953-a080ee817e1f.jpg');
     }
     50%{
-        background-image: url('./img/photo-1560769629-975ec94e6a86.jpg');
+        background-image: url('./img/light-painting-1758192_960_720.jpg');
     }
     100%{
-        background-image: url('./img/shoe-2498994_960_720.jpg');
+        background-image: url('./img/shoes-2060519_960_720.jpg');
     }
 }
 
@@ -104,18 +101,22 @@ h6{
 .fa-dolly, .fa-hourglass-half, .fa-exchange-alt, .fa-id-card{
     color: #0d34e6;
     font-size: 20px;
-    margin-bottom: 80%;
+    margin-bottom: 90%;
 }
 
 .flex-container1{
     width: 100%;
-    height: 10%;  
-    align-items: center;
+    height: 10%; 
+    border-bottom: .5px solid rgba(128, 128, 128, 0.349);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .flex-container1-item{
-    width: 25%;
+    flex: 1;
+    height: 100%;
     align-items: center;
-    padding: 3%;
+    justify-content: center;
+    padding: 1% 5%;
+    border-right: .5px solid rgba(128, 128, 128, 0.349);
 }
 .container1-item-content h3, .container1-item-content p{
     font-size: smaller;
@@ -147,6 +148,7 @@ h6{
     align-items: center;
     justify-content: center;
     margin: 1% 5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .container2-left-content1 h3{
     text-decoration: line-through;
@@ -175,6 +177,8 @@ h6{
 .flex-container3-box1, .flex-container3-box2, .flex-container3-box3, .flex-container3-box4{
     flex: 1;
     height: 100%;
+    border-bottom: .5px solid rgba(128, 128, 128, 0.349);
+    border-right: .5px solid rgba(128, 128, 128, 0.349);
 }
 .flex-container3-box2, .flex-container3-box3, .flex-container3-box4{
     position: relative;
@@ -212,14 +216,12 @@ h6{
 .flex-container4{
     width: 100%;
     height: 10%;
-    align-items: center;
 }
 .flex-container4-box1, .flex-container4-box2{
     flex: 1;
     height: 100%;
-}
-.flex-container4-box1, .flex-container4-box2{
     position: relative;
+    border-right: .5px solid rgba(128, 128, 128, 0.349);
 }
 .container4-box1-price, .container4-box2-price{
     position: absolute;
@@ -228,15 +230,16 @@ h6{
 }
 
 .flex-container4-box3{
+    flex: 2;
     position: relative;
     height: 100%;
-    flex: 2;
 }
 .flex-container4-box3 img{
     object-fit: cover;
+    height: 100%;
 }
 .container4-box3-content{
-    align-items: flex-start;
+    /* align-items: flex-start; */
     position: absolute;
     top: 13%;
     left: 1.5%;
@@ -272,12 +275,18 @@ h6{
 .flex-container5{
     width: 100%;
     height: 10%;
-    align-items: center;
 }
 .flex-container5-box1{
+    flex: 1;
+    height: 100%;
     position: relative;
     border-top: .5px solid rgba(128, 128, 128, 0.349);
     border-right: .5px solid rgba(128, 128, 128, 0.349);
+}
+.container5-box1-price{
+    position: absolute;
+    top: 80%;
+    left: 15%;
 }
 .discount-box1{
     position: absolute;
@@ -462,3 +471,9 @@ input[type="email"]
 .footer-left-content2 p{
     font-size: 10px;
 }
+
+
+/*************************** Responsive *********************/
+/* @media only and screen (min-width:768px){
+
+} */
