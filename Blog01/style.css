@@ -1,0 +1,447 @@
+*{
+    width: 1920;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    max-height: 20%;
+    background-color: #1230d8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5% .25%;
+     
+}
+.header-left-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15%;
+}
+.header-left, .header-right{
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.header-main{
+    flex-grow: 7;
+    text-align: center;
+}
+
+
+.far, .fas, .header-left-text h6, .header-left-text h4, .header-main h3{
+    color: #e9e9e6;
+}
+.navbar
+{
+    background: linear-gradient(
+        160.51deg,
+        #575ADA 41.36%,
+        rgba(128, 110, 232, 0.312475) 147.66%,
+        #8C8DC0 147.66%
+      );
+    height: 25vh;
+    text-align: center;
+}
+.navbar h3
+{
+    color: white;
+    padding-top:40px;
+}
+.blank 
+{
+    height:410vh;
+    background-color: whitesmoke;
+}
+.container
+{
+    position: absolute;
+    top: 30%;
+    right:9%;
+    box-shadow: 5px 10px 18px #888888;
+    width: 81%;
+    height: 420vh;
+}
+.container select
+{
+    width: 25%;
+    height: 60px;
+}
+.container .top-section{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.container .middle-section
+{
+    display: flex;
+    flex-direction: column;
+}
+.container .middle-section .mflex
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    border-bottom: 1px solid lightgray;
+}
+.container .middle-section .mflex div
+{
+    max-width: 50%;
+}
+.container .middle-section .mflex div img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.container .middle-section .mflex .part2
+{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    margin-top: 10%;
+}
+.container .loadmore
+{
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+.container .loadmore span
+{
+    display: inline-block;
+}
+.container .card
+{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container .card .card1:nth-child(1)
+{
+    height:29vh;
+    width: 25%;
+    background-color:lightskyblue;
+    color: white;
+    text-align: center;
+    padding: 70px 0px;
+}
+.container .card div:nth-child(2)
+{
+    height: 50vh;
+    width: 50%;
+    text-align: center;
+    padding: 70px 0px;
+}
+.container .card div:nth-child(2) span
+{
+    color:#1230d8;
+}
+.container .card .card-footer-left
+{
+    float: left;
+    padding-left: 50px;
+}
+.container .card .card-footer-right
+{
+    float: right;
+    padding-right: 50px;
+}
+.container .card .card1:nth-child(3)
+{
+    height:29vh;
+    width: 25%;
+    background-color:#1230d8;
+    color: white;
+    text-align: center;
+    padding: 70px 0px;
+}
+ .card .card-footer-right .left
+{
+  border-right: none;
+  border-radius:50px 0px 0px 50px;
+}
+.card .card-footer-right .right
+{
+  border-radius:0px 50px 50px 0px;
+}
+
+.white-container
+{
+    text-align: center;
+    padding: 5% 20%;
+    background-image: url("https://image.freepik.com/free-vector/clean-white-stripe-background_105940-870.jpg");
+
+}
+
+input[type="text"]
+{
+    height: 10vh;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: none;
+}
+.white-container i
+{
+    position: absolute;
+    right:32%;
+    top: 495vh;
+}
+.black-container
+{
+    text-align: center;
+    padding: 5% 8%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.black-container .box1
+{
+    max-width: 35%;
+}
+.black-container .box2, .black-container .box3
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.black-container .box4
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.black-container .box4 .box4-box1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.black-container .box1 div
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.author
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    margin:7%;
+}
+h1
+{
+    font-size: 25px;
+    margin: 37px;
+}
+button
+{
+    background: blue;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    float: right;
+    margin-top: -12%;
+    margin-right: 12%;
+}
+.flex-container6{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: .5%;
+    border-top:0.5px solid rgba(128, 128, 128, 0.349);
+}
+.fa-spinner{
+    color: blue;
+    font-size: 15px;
+    margin-right: 2%;
+}
+.flex img
+{
+    height: 100%;
+    width: 100%;
+}
+/***************** Container-7 **************/
+.flex-container7{
+    width: 100%;
+    height: 9%;
+}
+.container7-box1, .container7-box3{
+    flex: 1;
+    height: 100%;
+}
+.container7-box2{
+    height: 100%;
+    flex: 2;
+}
+.container7-box1{
+    background-color: #47b8f2;
+}
+.container7-box3{
+    background-color: #2840bc;
+}
+.container7-box1, .container7-box3, .container8-box2{
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.container7-box1-content, .container7-box3-content, .container8-box2-content{
+    align-items: center;
+}
+.flex-container7 i, .flex-container8 i{
+    font-size: xx-large;
+}
+.flex-container7 p, .flex-container8 p{
+    font-size: xx-small;
+}
+
+.container7-box2{
+    justify-content: space-around;
+    border-top: .5px solid rgba(119, 87, 87, 0.349);
+}
+.container7-box2-top{
+    justify-content: space-between;
+    padding: 0% 5%;
+}
+.container7-box2-content{
+    justify-content: space-between;
+    padding: 0% 5%;
+}
+
+/***************** Container-8 **************/
+.flex-container8{
+    width: 100%;
+    height: 10%;
+    align-items: center;
+}
+.container8-box1, .container8-box2, .container8-box3, .container8-box4{
+   flex: 1;
+   height: 100%;
+}
+.container8-box2{
+    background-color: #232323;
+}
+.flex-container8 img{
+    object-fit: cover;
+}
+/***************** Container-9 **************/
+.flex-container9{
+    width: 100%;
+    height: 8%;
+    align-items: center;
+}
+.container9-box1, .container9-box2, .container9-box3, .container9-box4, .container9-box5, .container9-box6{
+    flex: 1;
+    height: 100%;
+}
+.flex-container9 img{
+    object-fit: cover;
+}
+.flex, .header, .footer, .footer-mid{
+    display: flex;
+    flex-direction: row;
+}
+.flex-col, .header-left-text, .footer-left, .main-container-background, .flex-container1-item{
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width:1326px)
+{
+    .blank
+    {
+        height: 455vh;
+    }
+    .white-container i
+    {
+        top: 200%;
+
+    }
+}
+@media only screen and (max-width:700px)
+{
+    .blank
+    {
+        height:480vh;
+        width: 140%;
+    }
+    .header, .navbar
+    {
+        width: 140%;
+    }
+    .container
+    {
+        position: absolute;
+        top: 30%;
+        left: 8%;
+        box-shadow: 5px 10px 18px #888888;
+        width: 122%;
+        height: 360vh;
+    }
+    .white-container
+    {
+        width: 100%;
+    }
+    .black-container
+    {
+        width: 125%;
+    }
+    h1
+    {
+    font-size: 25px;
+    margin: 15px;
+    }
+    .mflex .part2
+    {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 10%;
+    flex-direction: column;
+    }
+    button
+    {
+        margin-top: 3%;
+        margin-right: 35%;
+    }
+}
+@media only screen and (max-width:576px)
+{
+    .header,.navbar
+
+    {
+        width: 231%;
+    }
+    .container
+    {
+        width: 200%;
+    }
+    .white-container
+    {
+        width:200%;
+    } 
+    .black-container
+    {
+        width: 215%;
+    }
+    .blank
+    {
+        height:543vh;
+        width: 238%;
+    }
+}
